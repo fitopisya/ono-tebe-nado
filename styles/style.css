@@ -11,7 +11,7 @@
   position: relative;
 }
 
-/* nav menu start */ 
+/* nav menu start */
 
 .header__menu {
   padding: 44px 36px 39px 27px;
@@ -50,7 +50,7 @@
   border-bottom: 1px solid black;
 }
 
-.header__link_active{
+.header__link_active {
   text-decoration: none;
 }
 
@@ -63,15 +63,33 @@
   width: 136px;
   height: 101px;
   position: absolute;
-  left : 458px;
+  left: 458px;
   top: 0;
-
 }
 
 /* logo end */
 
 /* adress start */
 
-/* adress start */
+.header__address {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 135%;
+  letter-spacing: 0.01em;
+  padding: 100px 63px 96px 184px;
+  font-style: normal;
+}
+
+.header__address a {
+  text-decoration: none;
+  border-bottom: 1px solid black;
+}
+
+.header__address .address {
+  letter-spacing: 0;
+}
+/* adress end */
 
 /* header end */
+
+/* cover start */
