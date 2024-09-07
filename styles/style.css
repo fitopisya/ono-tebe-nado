@@ -1,104 +1,77 @@
 /* место для вашего кода */
 /* header start */
+
 .header {
-  display: grid;
-  grid-template-columns: 1fr auto 1fr;
-  grid-template-areas: 
-  "menu logo adress";
+  display: flex;
+  justify-content: space-between;
   align-items: center;
-  margin: 94px 24px;
+  margin: 92px 20px 96px 28px;
+  width: 1052px;
+  height: 105px;
+  position: relative;
 }
 
-/* menu start */
+/* nav menu start */ 
 
 .header__menu {
-  grid-area: menu;
-  margin: 42px 42px 41px 29px;
+  padding: 44px 36px 39px 27px;
+  font-weight: 400;
+  font-size: 18px;
+  color: #000;
 }
 
 .header__links-list {
   display: flex;
-  gap: 32px;
-}
-
-.header__links-list-item {
-  font-size: 18px;
-  line-height: 21px;
-  letter-spacing: 0.01em;
-  list-style: circle;
-  white-space: nowrap;
-}
-
-.header__link {
-  text-decoration: none;
-  border-bottom: 1px solid #000;
-}
-
-.header__links-list-item.header__links-list-item_no-bullit {
+  column-gap: 32px;
+  align-items: center;
   list-style: none;
 }
 
-.header__link.header__link_active {
-  text-decoration: none;
-  border-bottom: 0 solid #fff;
+.header__link {
+  white-space: nowrap;
 }
 
-/* menu end */
-/* logo start  */
+.link-letter-space {
+  letter-spacing: 0.01em;
+}
+
+.header__links-list-item {
+  position: relative;
+}
+
+.list-marker {
+  position: absolute;
+  left: -19px;
+  top: 8px;
+}
+
+.header__links-list-item .header__link:not(.header__link_active) {
+  text-decoration: none;
+  border-bottom: 1px solid black;
+}
+
+.header__link_active{
+  text-decoration: none;
+}
+
+/* nav menu end */
+
+/* logo start */
 
 .header__logo {
-  grid-area: logo;
-  width: 135px;
-  height: 106px;
-  margin-right: 194px;
+  display: block;
+  width: 136px;
+  height: 101px;
+  position: absolute;
+  left : 458px;
+  top: 0;
+
 }
 
 /* logo end */
+
 /* adress start */
 
-.header__address {
-  grid-area: adress;
-  margin: 4px 26px 2px 0;
-  font-size: 18px;
-  font-style: normal;
-  line-height: 24px;
-}
+/* adress start */
 
-.header__address a {
-  text-decoration: none;
-  border-bottom: 1px solid #000;
-  line-height: 1.4;
-}
-
-/* adress end */
 /* header end */
-
-/* cover start */
-
-.cover {
-  height: 757px;
-  background-image: url(../images/cover.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  display: flex;
-  flex-direction: column;
-  row-gap: 135px;
-  position: relative;
-  color: #fff;
-}
-
-.overlay {
-  position: absolute;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.6);
-}
-
-.cover__title {
-  margin: 165px 50px 237px;
-  z-index: 2;
-}
