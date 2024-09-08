@@ -284,10 +284,8 @@
 }
 
 .about__logo {
-  position: relative;
-  left: -23px;
   width: 240px;
-  margin: 0 auto;
+  margin: 0 0 0 25px;
   border-radius: 50%;
   background-color: #000;
   background-image: url(../images/logo-white.svg);
@@ -331,8 +329,8 @@
   display: flex;
   gap: 199px;
   width: 1000px;
-  height: 98px;
   margin: 180px 50px 88px;
+  align-items: flex-end;
 }
 
 /* footer adress start */
@@ -357,8 +355,8 @@
 /* footer adress end */
 
 .footer__menu {
-  position: relative;
   display: flex;
+  padding-bottom: 35px;
 }
 
 .footer__menu-list,
@@ -369,13 +367,11 @@
 .footer__menu-list {
   display: flex;
   flex-direction: column;
-  margin: 1px 1px 1px 11px;
-  text-align: center;
+  margin: 0px -14px 1px 25px;
 }
 
 .footer__menu-link {
-  position: relative;
-  top: -1px;
+  margin-left: 14px;
   left: 14px;
   font-weight: 400;
   font-size: 18px;
