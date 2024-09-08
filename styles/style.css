@@ -2,13 +2,11 @@
 /* header start */
 
 .header {
-  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 1052px;
-  height: 105px;
-  margin: 92px 20px 96px 28px;
+  margin: -3px 0 2px 28px;
 }
 
 /* nav menu start */
@@ -45,13 +43,14 @@
   left: -19px;
 }
 
-.header__links-list-item .header__link:not(.header__link_active) {
+.header__link {
   border-bottom: 1px solid black;
   text-decoration: none;
 }
 
 .header__link_active {
   text-decoration: none;
+  border-bottom: 0;
 }
 
 /* nav menu end */
@@ -59,9 +58,6 @@
 /* logo start */
 
 .header__logo {
-  position: absolute;
-  top: 0;
-  left: 458px;
   display: block;
   width: 136px;
   height: 101px;
@@ -95,21 +91,19 @@
 /* cover start */
 
 .cover {
+  background-image: url("../images/cover.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
   position: relative;
+  padding: 165px 50px 50px 50px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  min-height: 757px;
-  background-image: url(../images/cover.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+  gap: 135px;
 }
 
 .overlay {
   position: absolute;
-  top: 0;
-  left: 0;
+  inset: 0 0;
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.6);
@@ -118,6 +112,7 @@
 /* cover title start */
 .cover__title {
   z-index: 1;
+  position: relative;
   color: white;
   font-weight: 700;
   font-size: 100px;
@@ -127,21 +122,20 @@
 }
 
 .aligned-text {
-  position: absolute;
-  top: 165px;
-  left: 50px;
+  display: block;
+  line-height: 115%;
 }
 
 .aligned-text_center {
-  position: absolute;
-  top: 293px;
-  left: 336px;
+  text-align: center;
+  line-height: 100%;
+  padding: 20px 60px 20px 0;
 }
 
 .aligned-text_right {
-  position: absolute;
-  top: 413px;
-  left: 634px;
+  text-align: right;
+  line-height: 100%;
+  margin-right: -30px;
 }
 
 .letter-spacing-extended {
@@ -156,19 +150,21 @@
 
 .cover__description {
   display: flex;
-  column-gap: 79px;
-  margin: 0 50px 51px 78px;
+  column-gap: 77px;
   color: #fff;
+  margin-left: 25px;
 }
 .cover__description-text {
   z-index: 1;
   padding-top: 12px;
   font-weight: 400;
   font-size: 22px;
+  white-space: nowrap;
   line-height: 1.27;
   letter-spacing: 0.01em;
   text-transform: uppercase;
   word-spacing: 17px;
+  word-spacing: 18px;
 }
 
 .bet-button {
@@ -179,6 +175,7 @@
   font-family: Raleway, sans-serif;
   font-weight: 500;
   font-size: 22px;
+  white-space: nowrap;
   text-align: center;
   text-transform: uppercase;
   background-color: transparent;
@@ -231,15 +228,15 @@
   background-size: cover;
 }
 
-.card.card_type_film {
+.card_type_film {
   background-image: url(../images/card-lot-01.jpg);
 }
 
-.card.card_type_book {
+.card_type_book {
   background-image: url(../images/card-lot-02.jpg);
 }
 
-.card.card_type_picture {
+.card_type_picture {
   background-image: url(../images/card-lot-03.jpg);
 }
 
