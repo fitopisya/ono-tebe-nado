@@ -130,7 +130,7 @@
 .aligned-text_center {
   line-height: 100%;
   text-align: center;
-  grid-column: tebe;
+  grid-column: tebe; 
   grid-row: 2;
   justify-self: center;
   align-self: end;
@@ -138,7 +138,7 @@
 
 .aligned-text_right {
   line-height: 100%;
-  text-align: right;
+  text-align: right; 
   grid-column: nado;
   grid-row: 3;
 }
